@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+@import "./helper/variables";
+@import "./helper/mixin";
+@import "./helper/placeholder";
+@import "./helper/extend";
+@import "./helper/grid";
+@import "./helper/nav";
+@import "./helper/footer";
+@import "./helper/animation";
+body {
+  background-image: url(/assets/img/red-with-dust.jpg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-size: 200px;
+    text-align: center;
+    color: wheat;
+    text-shadow: -40px -40px 0px yellowgreen;
+  }
+  .jegtilmænd {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    .grid-part-1 {
+      height: 400px;
+      width: 100px;
+      .small {
+        height: 100px;
+        width: 100px;
+        background: red;
+      }
+      .small-img-1 {
+        background-image: url(/assets/img/fak.jpg);
+        background-size: cover;
+      }
+      .small-img-2 {
+        background-image: url(/assets/img/drift-level-asian_o_690146.gif);
+        background-size: cover;
+      }
+      .small-img-3 {
+        background-image: url(/assets/img/SEX.jpg);
+        background-size: cover;
+      }
+      .small-img-4 {
+        background-image: url(/assets/img/weew.gif);
+        background-size: cover;
+      }
+    }
+    .grid-part-2 {
+      .big-img {
+        background-image: url(/assets/img/first-time-drifting-reality-expectation-drift-memes-48912406.png);
+        background-size: cover;
+        width: 500px;
+        height: 400px;
+      }
+    }
+  }
+}
